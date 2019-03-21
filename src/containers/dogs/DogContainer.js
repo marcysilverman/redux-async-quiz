@@ -1,8 +1,9 @@
+
 import { connect } from 'react-redux';
+import Images from '../../components/dogs/Images';
 import { getDogImage } from '../../selectors/dogs';
 import { fetchImages } from '../../actions/dogs';
-import Images from '../../components/dogs/Images';
-
+import { WithFetch } from '../../components/WithFetch';
 
 const mapStateToProps = (state) => ({
   image: getDogImage(state)
@@ -10,6 +11,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   fetch() {
+    console.log('fetch from conatiner');
     dispatch(fetchImages());
   }
 });
@@ -17,5 +19,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Images);
-
+)(WithFetch(Images));

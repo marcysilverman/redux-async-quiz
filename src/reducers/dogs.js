@@ -11,7 +11,10 @@ export default function reducer(state = initialState, { type, payload }) {
     case FETCH_IMAGE: {
       return {
         ...state,
+        image: payload.image
       };
     }
+    default: 
+      return state;
   }
 }

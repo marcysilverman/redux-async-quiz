@@ -1,8 +1,8 @@
 import React from 'react';
-import 
+import DogContainer from '../../containers/dogs/DogContainer';
 
 export default function App() {
   return (
-
-  )
+    <DogContainer />
+  );
 }
