@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Images Test Renders image 1`] = `
+Array [
+  <h2>
+    DOGGOS
+  </h2>,
+  <img />,
+]
+`;
+
+exports[`Images Test images 1`] = `
+Array [
+  <h2>
+    DOGGOS
+  </h2>,
+  <img />,
+]
+`;
