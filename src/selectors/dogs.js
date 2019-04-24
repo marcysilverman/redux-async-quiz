@@ -1,2 +1,5 @@
-export const getDogImage = state => state.dogs;
+export const getDogImage = state => {
+  return state.dogs.image;
+};
+
 
